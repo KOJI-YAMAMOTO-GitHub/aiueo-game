@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>HTML, CSS and JavaScript demo</title>
+    <title>50音ゲーム</title>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="centering_parent">
     <audio id="a" preload="auto">
         <source src="https://www.coscom.co.jp/hiragana-katakana/au50on/kana50on_a.mp3" type="audio/mp3"></audio>
     <audio id="i" preload="auto">
@@ -164,142 +164,146 @@
     <audio id="po" preload="auto">
         <source src="https://www.coscom.co.jp/hiragana-katakana/au50on/kana50on_po.mp3" type="audio/mp3"></audio>
 
+    <div class="centering_item">
+        <h1>50音ゲーム</h1>
+        <h2>50音の文字と音を覚える為のゲームです</h2>
+        <h3>音声データの読み込みを行う為、最初は音声が出ないことがあります</h3>
 
+        <div class="table centering_table">
 
-    <div class="table">
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('a')">あ</li>
+                    <li class="table-column" onclick="sound('i')">い</li>
+                    <li class="table-column" onclick="sound('u')">う</li>
+                    <li class="table-column" onclick="sound('e')">え</li>
+                    <li class="table-column" onclick="sound('o')">お</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ka')">か</li>
+                    <li class="table-column" onclick="sound('ki')">き</li>
+                    <li class="table-column" onclick="sound('ku')">く</li>
+                    <li class="table-column" onclick="sound('ke')">け</li>
+                    <li class="table-column" onclick="sound('ko')">こ</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('sa')">さ</li>
+                    <li class="table-column" onclick="sound('shi')">し</li>
+                    <li class="table-column" onclick="sound('su')">す</li>
+                    <li class="table-column" onclick="sound('se')">せ</li>
+                    <li class="table-column" onclick="sound('so')">そ</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ta')">た</li>
+                    <li class="table-column" onclick="sound('chi')">ち</li>
+                    <li class="table-column" onclick="sound('tsu')">つ</li>
+                    <li class="table-column" onclick="sound('te')">て</li>
+                    <li class="table-column" onclick="sound('to')">と</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('na')">な</li>
+                    <li class="table-column" onclick="sound('ni')">に</li>
+                    <li class="table-column" onclick="sound('nu')">ぬ</li>
+                    <li class="table-column" onclick="sound('ne')">ね</li>
+                    <li class="table-column" onclick="sound('no')">の</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ha')">は</li>
+                    <li class="table-column" onclick="sound('hi')">ひ</li>
+                    <li class="table-column" onclick="sound('fu')">ふ</li>
+                    <li class="table-column" onclick="sound('he')">へ</li>
+                    <li class="table-column" onclick="sound('ho')">ほ</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ma')">ま</li>
+                    <li class="table-column" onclick="sound('mi')">み</li>
+                    <li class="table-column" onclick="sound('mu')">む</li>
+                    <li class="table-column" onclick="sound('me')">め</li>
+                    <li class="table-column" onclick="sound('mo')">も</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ya')">や</li>
+                    <li class="table-column" onclick="sound('yu')">ゆ</li>
+                    <li class="table-column" onclick="sound('yo')">よ</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ra')">ら</li>
+                    <li class="table-column" onclick="sound('ri')">り</li>
+                    <li class="table-column" onclick="sound('ru')">る</li>
+                    <li class="table-column" onclick="sound('re')">れ</li>
+                    <li class="table-column" onclick="sound('ro')">ろ</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('wa')">わ</li>
+                    <li class="table-column" onclick="sound('wo')">を</li>
+                    <li class="table-column" onclick="sound('n')">ん</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ga')">が</li>
+                    <li class="table-column" onclick="sound('gi')">ぎ</li>
+                    <li class="table-column" onclick="sound('gu')">ぐ</li>
+                    <li class="table-column" onclick="sound('ge')">げ</li>
+                    <li class="table-column" onclick="sound('go')">ご</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('za')">ざ</li>
+                    <li class="table-column" onclick="sound('ji')">じ</li>
+                    <li class="table-column" onclick="sound('zu')">ず</li>
+                    <li class="table-column" onclick="sound('ze')">ぜ</li>
+                    <li class="table-column" onclick="sound('zo')">ぞ</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('da')">だ</li>
+                    <li class="table-column" onclick="sound('ji')">ぢ</li>
+                    <li class="table-column" onclick="sound('zu')">づ</li>
+                    <li class="table-column" onclick="sound('de')">で</li>
+                    <li class="table-column" onclick="sound('do')">ど</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('ba')">ば</li>
+                    <li class="table-column" onclick="sound('bi')">び</li>
+                    <li class="table-column" onclick="sound('bu')">ぶ</li>
+                    <li class="table-column" onclick="sound('be')">べ</li>
+                    <li class="table-column" onclick="sound('bo')">ぼ</li>
+                </ul>
+            </div>
+            <div class="list-row">
+                <ul>
+                    <li class="table-column" onclick="sound('pa')">ぱ</li>
+                    <li class="table-column" onclick="sound('pi')">ぴ</li>
+                    <li class="table-column" onclick="sound('pu')">ぷ</li>
+                    <li class="table-column" onclick="sound('pe')">ぺ</li>
+                    <li class="table-column" onclick="sound('po')">ぽ</li>
+                </ul>
+            </div>
 
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('a')">あ</li>
-                <li class="table-column" onclick="sound('i')">い</li>
-                <li class="table-column" onclick="sound('u')">う</li>
-                <li class="table-column" onclick="sound('e')">え</li>
-                <li class="table-column" onclick="sound('o')">お</li>
-            </ul>
         </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ka')">か</li>
-                <li class="table-column" onclick="sound('ki')">き</li>
-                <li class="table-column" onclick="sound('ku')">く</li>
-                <li class="table-column" onclick="sound('ke')">け</li>
-                <li class="table-column" onclick="sound('ko')">こ</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('sa')">さ</li>
-                <li class="table-column" onclick="sound('shi')">し</li>
-                <li class="table-column" onclick="sound('su')">す</li>
-                <li class="table-column" onclick="sound('se')">せ</li>
-                <li class="table-column" onclick="sound('so')">そ</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ta')">た</li>
-                <li class="table-column" onclick="sound('chi')">ち</li>
-                <li class="table-column" onclick="sound('tsu')">つ</li>
-                <li class="table-column" onclick="sound('te')">て</li>
-                <li class="table-column" onclick="sound('to')">と</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('na')">な</li>
-                <li class="table-column" onclick="sound('ni')">に</li>
-                <li class="table-column" onclick="sound('nu')">ぬ</li>
-                <li class="table-column" onclick="sound('ne')">ね</li>
-                <li class="table-column" onclick="sound('no')">の</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ha')">は</li>
-                <li class="table-column" onclick="sound('hi')">ひ</li>
-                <li class="table-column" onclick="sound('fu')">ふ</li>
-                <li class="table-column" onclick="sound('he')">へ</li>
-                <li class="table-column" onclick="sound('ho')">ほ</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ma')">ま</li>
-                <li class="table-column" onclick="sound('mi')">み</li>
-                <li class="table-column" onclick="sound('mu')">む</li>
-                <li class="table-column" onclick="sound('me')">め</li>
-                <li class="table-column" onclick="sound('mo')">も</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ya')">や</li>
-                <li class="table-column" onclick="sound('yu')">ゆ</li>
-                <li class="table-column" onclick="sound('yo')">よ</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ra')">ら</li>
-                <li class="table-column" onclick="sound('ri')">り</li>
-                <li class="table-column" onclick="sound('ru')">る</li>
-                <li class="table-column" onclick="sound('re')">れ</li>
-                <li class="table-column" onclick="sound('ro')">ろ</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('wa')">わ</li>
-                <li class="table-column" onclick="sound('wo')">を</li>
-                <li class="table-column" onclick="sound('n')">ん</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ga')">が</li>
-                <li class="table-column" onclick="sound('gi')">ぎ</li>
-                <li class="table-column" onclick="sound('gu')">ぐ</li>
-                <li class="table-column" onclick="sound('ge')">げ</li>
-                <li class="table-column" onclick="sound('go')">ご</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('za')">ざ</li>
-                <li class="table-column" onclick="sound('ji')">じ</li>
-                <li class="table-column" onclick="sound('zu')">ず</li>
-                <li class="table-column" onclick="sound('ze')">ぜ</li>
-                <li class="table-column" onclick="sound('zo')">ぞ</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('da')">だ</li>
-                <li class="table-column" onclick="sound('ji')">ぢ</li>
-                <li class="table-column" onclick="sound('zu')">づ</li>
-                <li class="table-column" onclick="sound('de')">で</li>
-                <li class="table-column" onclick="sound('do')">ど</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('ba')">ば</li>
-                <li class="table-column" onclick="sound('bi')">び</li>
-                <li class="table-column" onclick="sound('bu')">ぶ</li>
-                <li class="table-column" onclick="sound('be')">べ</li>
-                <li class="table-column" onclick="sound('bo')">ぼ</li>
-            </ul>
-        </div>
-        <div class="list-row">
-            <ul>
-                <li class="table-column" onclick="sound('pa')">ぱ</li>
-                <li class="table-column" onclick="sound('pi')">ぴ</li>
-                <li class="table-column" onclick="sound('pu')">ぷ</li>
-                <li class="table-column" onclick="sound('pe')">ぺ</li>
-                <li class="table-column" onclick="sound('po')">ぽ</li>
-            </ul>
-        </div>
-
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>

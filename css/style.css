@@ -19,6 +19,10 @@ list-style: none;
 
 @media screen and (min-width:480px) { 
   /*　画面サイズが480pxからはここを読み込む　*/
+  .table{
+    font-size: 100px;
+    font-family: 'M PLUS 1p', sans-serif;
+  }
   .centering_item {
     /* background-color: #03A9F4;  背景色指定 */
     /* width: 480px;               幅指定 */
@@ -36,10 +40,10 @@ list-style: none;
     flex-direction: column;
     margin-right: 0;
     border: 1px solid #ccc;
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     text-align: center;
-    line-height: 50px;
+    line-height: 200px;
   }
   
 
@@ -51,6 +55,8 @@ list-style: none;
   /*　画面サイズが1024pxからはここを読み込む　*/
   .table{
     display: flex;
+    font-size: 50px;
+    font-family: 'M PLUS 1p', sans-serif;
     }
     
     .table div ul{

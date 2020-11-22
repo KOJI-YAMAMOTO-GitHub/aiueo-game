@@ -17,7 +17,35 @@ list-style: none;
   display: inline-block;
 }
 
-@media screen and (min-width:480px) { 
+.table{
+  display: flex;
+  font-size: 50px;
+  font-family: 'M PLUS 1p', sans-serif;
+  }
+  
+  .table div ul{
+  display: table;
+  table-layout: fixed;
+  margin: 10px 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  }
+  
+  .table-column{
+  flex-direction: column;
+  margin-right: 0;
+  border: 1px solid #ccc;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+  }
+
+
+
+@media screen and (max-width:480px) { 
   /*　画面サイズが480pxからはここを読み込む　*/
   .table{
     font-size: 100px;
@@ -53,30 +81,4 @@ list-style: none;
 }
 @media screen and (min-width:1024px) {
   /*　画面サイズが1024pxからはここを読み込む　*/
-  .table{
-    display: flex;
-    font-size: 50px;
-    font-family: 'M PLUS 1p', sans-serif;
-    }
-    
-    .table div ul{
-    display: table;
-    table-layout: fixed;
-    margin: 10px 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-    }
-    
-    .table-column{
-    flex-direction: column;
-    margin-right: 0;
-    border: 1px solid #ccc;
-      width: 100px;
-      height: 100px;
-      text-align: center;
-      line-height: 100px;
-    }
-  
 }

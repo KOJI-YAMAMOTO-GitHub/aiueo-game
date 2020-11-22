@@ -60,3 +60,21 @@ list-style: none;
       color: crimson;
     }
   }
+    @media screen and (min-width:1024px){
+      .centering_item {
+        width: 1600px;               /* 幅指定 */
+      }
+      .table{
+        width: 1500px;               /* 幅指定 */
+        }
+        .table-column{
+          flex-direction: column;
+          margin-right: 0;
+          border: 1px solid #ccc;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+          }  
+              
+    }

@@ -9,7 +9,7 @@ list-style: none;
 
 .centering_item {
   /* background-color: #03A9F4;  背景色指定 */
-  width: 1600px;               /* 幅指定 */
+  width: 850px;               /* 幅指定 */
   margin:  0 auto;            /* 中央寄せ */
   text-align:  center; 
 }
